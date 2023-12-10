@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:app": "ng build angular --configuration=production --base-href=/angular/",
+    "build:ci": "npm run build:app"
   },
   "private": true,
   "dependencies": {
